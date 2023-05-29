@@ -9,8 +9,9 @@
  */
 
 /**
- * This function will connect wp_mail to your authenticated SMTP server.
- * All SMTP_CONSTANTS are defined in wp-config.php
+ * This function will connect wp_mail to your authenticated mSMTP server.
+ * snippet reference:  
+ * https://www.e-tinkers.com/2020/09/simple-steps-to-setup-wordpress-smtp-email-without-a-plugin/
  */
 add_action( 'phpmailer_init', 'send_smtp_email' );
 function send_smtp_email( $phpmailer ) {
